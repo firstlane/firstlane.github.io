@@ -1,0 +1,47 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'firstlane'
+theme = "npqhugo"
+copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+pygmentsUseClasses=true
+
+[params]
+  author = "your name"
+  description = "your description"
+  keywords = "hugo blog"
+  useAvatar = true
+  microBlogSection = "posts"
+  displayMicroBlog = false
+  displayRecent = true
+  displayHomeContent = false
+  recentMax = 4
+  mail = "mail@example.com"
+  phone = "8888888888"
+  formspreeID = "yourformspreeID"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class=\"fas fa-home fa-sm\"></i>"
+    url = "/"
+    weight = -9 
+  [[menu.main]]
+    name = "Blog"
+    pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
+    url = "/blog/"
+    weight = -8
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class=\"fas fa-tags fa-ms\"></i>"
+    url = "/tags"
+    weight = -7 
+  [[menu.main]]
+    name = "Github"
+    pre = "<i class=\"fab fa-github fa-ms\"></i>"
+    url = "https://github.com/firstlane"
+    weight = -6 
+  [[menu.main]]
+    name = "About"
+    pre = "<i class=\"far fa-envelope\"></i>"
+    url = "/about"
+    weight = -1 
