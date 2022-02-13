@@ -15,8 +15,8 @@ pygmentsUseClasses=true
   displayRecent = true
   displayHomeContent = false
   recentMax = 4
-  mail = "mail@example.com"
-  phone = "8888888888"
+  mail = ""
+  phone = ""
   formspreeID = "yourformspreeID"
 
 [menu]
@@ -26,9 +26,9 @@ pygmentsUseClasses=true
     url = "/"
     weight = -9 
   [[menu.main]]
-    name = "Blog"
+    name = "Posts"
     pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
-    url = "/blog/"
+    url = "/posts/"
     weight = -8
   [[menu.main]]
     name = "Tags"
