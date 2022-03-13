@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://firstlane.github.io/'
 languageCode = 'en-us'
 title = 'firstlane'
 theme = "npqhugo"
@@ -6,18 +6,18 @@ copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all r
 pygmentsUseClasses=true
 
 [params]
-  author = "your name"
-  description = "your description"
-  keywords = "hugo blog"
+  author = "firstlane"
+  description = ""
+  keywords = ""
   useAvatar = true
   microBlogSection = "posts"
   displayMicroBlog = false
-  displayRecent = true
+  displayRecent = false
   displayHomeContent = false
-  recentMax = 4
+  recentMax = 1
   mail = ""
   phone = ""
-  formspreeID = "yourformspreeID"
+  formspreeID = ""
 
 [menu]
   [[menu.main]]
@@ -29,6 +29,11 @@ pygmentsUseClasses=true
     name = "Posts"
     pre = "<i class=\"fas fa-keyboard fa-ms\"></i>"
     url = "/posts/"
+    weight = -8
+  [[menu.main]]
+    name = "Projects"
+    pre = "<i class=\"fas fa-project-diagram\"></i>"
+    url = "/projects/"
     weight = -8
   [[menu.main]]
     name = "Tags"

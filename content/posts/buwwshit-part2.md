@@ -27,39 +27,17 @@ We want to pass our functions `uwuify` and `revealBullshit` to `findAndReplaceDO
 ```
 findAndReplaceDOMText(doc.getRootNode(), {
     preset: 'prose',
-    find: /.+/,
+    find: /(.|\n)+/,
     replace: revealBullshit
 });
 
 findAndReplaceDOMText(doc.getRootNode(), {
     preset: 'prose',
-    find: /.+/,
+    find: /(.|\n)+/,
     replace: uwuify
 });
 ```
 
-To test this, I hopped onto my company email, grabbed one from the CEO, and pasted the HTML source into the tool. I took the output and put it into a test HTML file and opened it in a browser to see the result. At first, I thought I had succeeded. The text replacement was working! It had changed the email subject line, the email header and greeting, even my name from my email address.
-
-Despite the initial feelings of success, it quickly became apparent that the tool was not functioning correctly. There were several paragraphs in the email that had only a few words at the start of the paragraph transformed, but everything else was untouched. For example, say I had the following passage:
-
-    Look, I don't care what you fuckin' do. I don't even know...what...
-    Just say fucking Solarbeam! I mean "Venusaur".
-    Whatever, do Solarbeam.
-    Yeah, okay thanks! Venusaur! Ngyuuuuh!
-
-It would be transformed into something like the following:
-
-    Wook, I don't cawe what you fuckin' do. I don't even know...what...
-    Just say *twerks* fucking Sowawbeam!!11 I mean "Venusaur".
-    Whatevew, do Solarbeam.
-    Yeah, okay thanks!!11 Venusaur! Ngyuuuuh!
-
-As you can see, the beginning of each paragraph was transformed correctly; but, after a certain point they would no longer have their content changed.
-
-I started debugging the program to try and see what was wrong. The calls to the replace functions by `findAndReplaceDOMText` seemed to be missing a lot of content. The matches being found were not fully encompassing the content of every paragraph. This seemed like something was going wrong inside of `findAndReplaceDOMText`.
-
-After staring at the debugger with a stumped expression, I pulled up the source HTML for the email and looked at the paragraphs that were having issues. I noticed a pattern pretty quickly. Every place the tool stopped transforming text in a paragraph was where a newline existed in the HTML source. It seemed that `findAndReplaceDOMText` didn't handle newlines well.
-
-I could have looked into modifying `findAndReplaceDOMText` to fix this, but I was lazy and instead chose to remove all newlines from any HTML input. Problem fixed!
+To test this, I hopped onto my company email, grabbed one from the CEO, and pasted the HTML source into the tool. I took the output and put it into a test HTML file and opened it in a browser to see the result. It was wonderful! I can't share this particular example, but here is an [alternative](../../static/the&#32(runs&#32away)&#32Facebook&#32Company&#32Is&#32Nyow&#32Meta.html).
 
 That's all I've got for this post. You can find the tool [here](https://firstlane.github.io/buwwshit/). Go find some nice, juicy corporate jargon and see how it transforms.

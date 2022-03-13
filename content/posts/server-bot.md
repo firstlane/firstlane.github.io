@@ -36,4 +36,8 @@ All that was left was writing the code that would run on the server and listen f
 
 ## Setting Up Services
 
-I wanted to set the server controller to run as a service so that it would start on boot. My first thought was to run it in a Docker container, but there's not a good way to shutdown the main computer from within a container. Instead, I looked to `systemd`.
+I wanted to set the server controller to run as a service so that it would start on boot. My first thought was to run it in a Docker container, but there's not a good way to shutdown the main computer from within a container. Instead, I looked to `systemd`. I followed [this tutorial](https://www.howtogeek.com/687970/how-to-run-a-linux-program-at-startup-with-systemd/) since I had never setup a service on Linux before, and it was quite simple. All I had to do was create a new unit file and enable the service.
+
+## Conclusion
+
+With this, everything was complete. I started testing the bot and server controller, quickly fixed a few issues, and finally had a working tool. I could now lay in bed with my phone, send the message `shutdown` to the bot, and have my computer shut itself down. I could just as easily send `start` and the computer would instantly fire up. No more SSH or getting up to press the power button! I have achieved laziness.

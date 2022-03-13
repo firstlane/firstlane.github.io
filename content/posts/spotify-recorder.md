@@ -1,3 +1,9 @@
+---
+title: "Spotify Recorder"
+date: 2020-09-17T21:54:15-06:00
+draft: false
+---
+
 # Spotify Recorder
 
 I love Spotify. I first subscribed around the time I was in college, and it has helped me to discover so many songs that I now love. However, over time I found that I wasn't really listening to new music, but continued to listen to the same songs I knew I enjoyed (I'm most certainly a creature of habit). The money going into Spotify each month didn't really feel worth it, but if I didn't subscribe, I wouldn't be able to download and listen to my perfectly crafted playlists in whatever order I want...
