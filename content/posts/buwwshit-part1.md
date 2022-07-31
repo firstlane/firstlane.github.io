@@ -1,7 +1,6 @@
 ---
 title: "Buwwshit Part1"
 date: 2021-06-18T21:30:42-06:00
-draft: true
 ---
 
 I work at a company that was acquired about a year and a half ago. Prior to this event, we were an employee-owned company. With the purchase, the company stock that many long-time employees held suddenly multiplied in value. This was a fantastic opportunity for older and loyal employees to see a return on their time invested into the company, so I understand why the decision was made to sell.

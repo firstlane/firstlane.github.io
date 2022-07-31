@@ -1,7 +1,6 @@
 ---
 title: "Server Bot"
 date: 2022-02-12T21:35:27-06:00
-draft: true
 ---
 
 ## Intro
