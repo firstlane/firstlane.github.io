@@ -1,6 +1,7 @@
 ---
 title: "Buwwshit Part2"
 date: 2021-06-20T21:31:05-06:00
+author: "firstlane"
 ---
 
 In a previous post, I discussed Buwwshit, a tool my coworkers and I created to meme corporate-wide emails from the executive staff. The tool was rough, but it worked. You could copy/paste some text into it and it would spit out an uwufied version, while also unmasking any bullshit masquerading as corporate jargon.

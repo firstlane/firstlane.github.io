@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'firstlane'
 theme = 'tale'
 
+[author]
+    name = "firstlane"
+
 [menu]
   [[menu.main]]
     identifier = "about"

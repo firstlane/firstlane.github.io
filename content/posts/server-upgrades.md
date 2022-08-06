@@ -1,6 +1,7 @@
 ---
 title: "Server Upgrades"
 date: 2022-03-12T20:42:00-06:00
+author: "firstlane"
 ---
 
 I've been enjoying having a home server setup, but I was facing a problem. In a previous post, I wrote about a Discord bot I wrote to allow me to start and shutdown my server easily. The motivation for this was that the server was loud, and in my bedroom. I wanted to be able to shut it down easily if I was laying in bed and ready to fall asleep.
